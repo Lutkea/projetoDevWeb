@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Panagua</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="../js/index.js"></script>
+    <link rel="shortcut icon" href="../img/favicon.ico" >
+</head>
+<body>
+    <header>
+        <h1 id="tituloPrincipal">Bem vindo!</h1>
+        <p>Aqui você irá encontrar o CRUD da Pizzaria Panagua</p>
+        <!-- <img src="../img/pizzalove.gif" class="gif"> -->
+    </header>
+    <div class="container">
+        <form class="formulario">
+            <legend>Informações</legend>
+                <label form="sabor">Pizzas:</label>
+                <select id="nomeSabor" name="sabores">
+                    <option value="sabor1">Mussarela</option>
+                    <option value="sabor2">Calabresa</option>
+                    <option value="sabor3">Bacon</option>
+                    <option value="sabor4">Brocólis</option>
+                    <option value="sabor5">Marguerita</option>
+                    <option value="sabor6">Frango</option>
+                    <option value="sabor7">Peito de Peru</option>
+                    <option value="sabor8">Sensação</option>
+                    <option value="sabor9">Tentação</option>
+                    <option value="sabor10">Prestigio</option>
+                    <option value="sabor11">Sonho de Valsa</option>
+                </select>
+
+                <label form="tamanho">Tamanho:</label>
+                <select id="tamanho" name="tamanho">
+                    <option value="tamanhoP">Pequena</option>
+                    <option value="tamanhoM">Média</option>
+                    <option value="tamanhoG">Grande</option>
+                    <option value="tamanhoGg">Gigante</option>
+                    <option value="tamanhoF">Familia</option>
+                </select>
+
+                <label form="pagamento">Pagamento:</label>
+                <select id="pagamento" name="pagamento">
+                    <option value="pagDebito">Débito</option>
+                    <option value="pagCredito">Crédito</option>
+                    <option value="pagDinheiro">Dinheiro</option>
+                </select>
+
+            <input type="button" value="Adicionar" onclick="salvarSabor()">
+
+            </form>
+        <div id="box" backgroud-color="black">
+        </div>
+    </div>
+    <footer class="rodape">
+        © Todos os direitos reservados | Amanda Lutke
+    </footer>
+</body>
+</html>
